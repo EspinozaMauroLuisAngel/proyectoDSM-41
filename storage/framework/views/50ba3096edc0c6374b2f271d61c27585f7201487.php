@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\angel\Desktop\cuervo\resources\views/adminusers/show.blade.php ENDPATH**/ ?>
