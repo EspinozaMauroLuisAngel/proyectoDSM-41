@@ -81,7 +81,7 @@
                                                 <td><?php echo e($listnote->id); ?></td>
                                                 <td><?php echo e($listnote->title); ?></td>
                                                 <td><?php echo e($listnote->listdescription); ?></td>
-                                                <td><?php echo e($listnote->image); ?></td>
+                                                <td><img src="<?php echo e($listnote->image); ?>" alt="" width="100" height="100"> </td>
                                                 <td><?php echo e($listnote->remind); ?></td>                                                
                                                 
                                                 <td>        
@@ -92,6 +92,7 @@
                                                     <div class="col-4">
                                                         <a class="btn btn-warning m-3" href="<?php echo e(route('listnote.edit',$listnote->id)); ?>"> <i class="fa-solid fa-pen-to-square"></i></a>
                                                     </div>
+
                                                     <div class="col-4">
                                                         <form action="listnote/<?php echo e($listnote->id); ?>" method="POST">
                                                             <?php echo csrf_field(); ?>
@@ -100,7 +101,8 @@
                                                             <button class="btn btn-danger m-3" type="submit"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                         </form>
-                                                    </div>    
+                                                    </div>  
+                                                      
                                                 </div>
                                                 </td>
                                             </tr>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('listdescription');
-            $table->binary('image');
+            $table->string('image');
             $table->dateTime('remind',0);
 
             $table->SoftDeletes();

@@ -77,9 +77,8 @@
                                             <tr>
                                                 <td>{{$imagenote->id}}</td>
                                                 <td>{{$imagenote->title}}</td>
-                                                <td>{{$imagenote->image}}</td>
+                                                <td><img src="{{$imagenote->image}}" alt="" width="100" height="100"></td>                                                
                                                 <td>{{$imagenote->remind}}</td>                                                
-                                                
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

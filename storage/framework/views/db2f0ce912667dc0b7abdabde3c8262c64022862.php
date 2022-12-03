@@ -81,9 +81,7 @@
                                                 <td><?php echo e($note->id); ?></td>
                                                 <td><?php echo e($note->title); ?></td>
                                                 <td><?php echo e($note->description); ?></td>
-                                                <td><?php echo e($note->image); ?></td>
-                                                <td><?php echo e($note->remind); ?></td>                                                
-                                                
+                                                <td><img src="<?php echo e($note->image); ?>" alt="" width="100" height="100"></td>                                                <td><?php echo e($note->remind); ?></td>                                                     
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

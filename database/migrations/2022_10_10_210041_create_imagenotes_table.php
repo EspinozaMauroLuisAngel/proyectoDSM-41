@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('imagenotes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->binary('image');
+            $table->string('image');
             $table->dateTime('remind',0);
 
             $table->SoftDeletes();

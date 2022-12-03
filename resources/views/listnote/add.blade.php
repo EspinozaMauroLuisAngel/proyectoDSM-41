@@ -19,30 +19,33 @@
         <div class="card shadow mb-4">
             
             <div class="card-body">
-            <form action="{{ route('listnote.store') }}" method="POST">
-                @csrf
 
-                <label for="validationServer01" class="form-label">Titulo:</label>
-                <input class="form-control" id="validationServer01" type="text" name="title" required>
-                
-                <label for="validationServer02" class="form-label">Describcion de la Lista:</label>
-                <input class="form-control" id="validationServer02" type="text" name="listdescription" required>
+                <form action="{{route('listnote.store')}}" enctype="multipart/form-data" method="POST">
+                    @csrf
+                    <label for="validationServer01" class="form-label">Titulo:</label>
+                    <input class="form-control" id="validationServer01" type="text" name="title" required>
+                    
+                    <label for="validationServer02" class="form-label">Describcion de la Lista:</label>
+                    <input class="form-control" id="validationServer02" type="text" name="listdescription" required>
+        
+                    <label for="validationServer03" class="form-label">Imagen:</label>
+                    <input class="form-control" id="validationServer03" type="file" name="image" required>
     
-                <label for="validationServer03" class="form-label">Imagen:</label>
-                <input class="form-control" id="validationServer03" type="file" name="image" required>
-
-                <label for="validationServer04" class="form-label">Recordarme:</label>
-                <input class="form-control" id="validationServer04" type="datetime-local" name="remind" required>
-
-                <div class="row">
-                    <button type="submit" class="btn btn-primary m-3">Guadar</button>
-                </div>
-            </form>
+                    <label for="validationServer04" class="form-label">Recordarme:</label>
+                    <input class="form-control" id="validationServer04" type="datetime-local" name="remind" required>
+    
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary m-3">Guadar</button>
+                    </div>
+                </form>
+            
+                
             </div>
         </div>
     </div>
 </div>
 </div>
+
 <!-- /.container-fluid -->
 </div>
 

@@ -80,7 +80,7 @@
                                                 <td>{{$listnote->id}}</td>
                                                 <td>{{$listnote->title}}</td>
                                                 <td>{{$listnote->listdescription}}</td>
-                                                <td>{{$listnote->image}}</td>
+                                                <td><img src="{{$listnote->image}}" alt="" width="100" height="100"> </td>
                                                 <td>{{$listnote->remind}}</td>                                                
                                                 
                                                 <td>        
@@ -91,6 +91,7 @@
                                                     <div class="col-4">
                                                         <a class="btn btn-warning m-3" href="{{route('listnote.edit',$listnote->id)}}"> <i class="fa-solid fa-pen-to-square"></i></a>
                                                     </div>
+
                                                     <div class="col-4">
                                                         <form action="listnote/{{$listnote->id}}" method="POST">
                                                             {!! csrf_field() !!}
@@ -98,7 +99,8 @@
                                                             <button class="btn btn-danger m-3" type="submit"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                         </form>
-                                                    </div>    
+                                                    </div>  
+                                                      
                                                 </div>
                                                 </td>
                                             </tr>

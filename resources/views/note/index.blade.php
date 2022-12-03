@@ -80,9 +80,7 @@
                                                 <td>{{$note->id}}</td>
                                                 <td>{{$note->title}}</td>
                                                 <td>{{$note->description}}</td>
-                                                <td>{{$note->image}}</td>
-                                                <td>{{$note->remind}}</td>                                                
-                                                
+                                                <td><img src="{{$note->image}}" alt="" width="100" height="100"></td>                                                <td>{{$note->remind}}</td>                                                     
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

@@ -8,6 +8,7 @@ use App\Http\Controllers\userController;
 use App\Http\Controllers\noteController;
 use App\Http\Controllers\listnoteController;
 use App\Http\Controllers\imagenoteController;
+use App\Http\Controllers\ApiUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::Apiresource('adminusers',adminuserController::class);
-Route::Apiresource('user',userController::class);
+Route::Apiresource('user',ApiUserController::class);
 Route::Apiresource('note',noteController::class);
 Route::Apiresource('listnote',listnoteController::class);
 Route::Apiresource('imagenote',imagenoteController::class);

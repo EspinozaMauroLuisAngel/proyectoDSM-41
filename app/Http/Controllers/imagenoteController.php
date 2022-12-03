@@ -26,8 +26,7 @@ class imagenoteController extends Controller
         $imagenotes->title = $request->post('title');
         $imagenotes->image = $request->post('image');
         $imagenotes->remind = $request->post('remind');
-        $imagenotes->save
-        ();
+        $imagenotes->save();
         return redirect()->route("imagenote.index")->with("success", "¡Agregado con exito!");
         
     }
