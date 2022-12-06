@@ -21,7 +21,7 @@ class listnoteController extends Controller
 
     public function store(Request $request){
         $listnote = new listnote;
-         if($request->hasFile('image')){
+        if($request->hasFile('image')){
 
              $file = $request->file('image');
              $destinationpath = 'public/imagenes';
@@ -29,6 +29,7 @@ class listnoteController extends Controller
              $uploadSucces = $request->file('image')->move($destinationpath, $filename);
              $listnote->image = $destinationpath . $filename;  
         }
+        
         $listnote->title = $request->input('title');
         $listnote->listdescription = $request->input('listdescription');
         $listnote->remind = $request->input('remind');

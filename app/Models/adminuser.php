@@ -10,13 +10,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class adminuser extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory, SoftDeletes;
     protected $table = "adminusers";
     public $timestamps = false;
 
-
     public function user() {
-        return $this->hasOne(user::class);
+        return $this->hasOne(user::class, 'user_id', 'id');
 
     }    
 }

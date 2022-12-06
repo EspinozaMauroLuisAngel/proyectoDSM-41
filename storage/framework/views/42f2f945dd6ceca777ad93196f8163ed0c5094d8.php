@@ -28,8 +28,9 @@
                 
                 <label for="validationServer02" class="form-label">Describcion de la Lista:</label>
                 <input class="form-control" id="validationServer02" type="text" name="listdescription" required value="<?php echo e($listnote->listdescription); ?>">
-    
-                <label for="validationServer03" class="form-label">Imagen:</label>
+                
+                <label for="validationServer03" class="form-label">Imagen:</label><br>
+                <img src="<?php echo e($listnote->image); ?>" width="100" height="100">
                 <input class="form-control" id="validationServer03" type="file" name="image" required value="<?php echo e($listnote->image); ?>">
 
                 <label for="validationServer04" class="form-label">Recordarme:</label>

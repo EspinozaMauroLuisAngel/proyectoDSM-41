@@ -19,7 +19,7 @@
         <div class="card shadow mb-4">
             
             <div class="card-body">
-            <form action="{{ route('note.store') }}" method="POST">
+            <form action="{{ route('note.store') }}" enctype="multipart/form-data" method="POST">
                 @csrf
 
                 <label for="validationServer01" class="form-label">Titulo:</label>

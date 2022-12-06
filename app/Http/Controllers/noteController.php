@@ -17,16 +17,23 @@ class noteController extends Controller
         return view('note.add');
     }
 
+
     public function store(Request $request){
-        
         $note = new note();
-        $note->title = $request->post('title');
-        $note->description = $request->post('description');
-        $note->image = $request->post('image');
-        $note->remind = $request->post('remind');
+
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $destinationpath = 'public/imagenes';
+            $filename = time(). '-' . $file->getClientOriginalName();
+            $uploadSucces = $request->file('image')->move($destinationpath, $filename);
+            $note->image = $destinationpath . $filename;  
+        } 
+
+        $note->title = $request->input('title');
+        $note->description = $request->input('description');
+        $note->remind = $request->input('remind');
         $note->save();
-        return redirect()->route("note.index")->with("success", "¡Agregado con exito!");
-        
+        return redirect()->route("note.index")->with("success", "¡Agregado con exito!");        
     }
 
 

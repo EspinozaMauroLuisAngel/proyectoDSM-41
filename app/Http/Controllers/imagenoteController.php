@@ -23,9 +23,17 @@ class imagenoteController extends Controller
     public function store(Request $request){
 
         $imagenotes = new imagenote();
-        $imagenotes->title = $request->post('title');
-        $imagenotes->image = $request->post('image');
-        $imagenotes->remind = $request->post('remind');
+        if($request->hasFile('image')){
+
+            $file = $request->file('image');
+            $destinationpath = 'public/imagenes';
+            $filename = time(). '-' . $file->getClientOriginalName();
+            $uploadSucces = $request->file('image')->move($destinationpath, $filename);
+            $imagenotes->image = $destinationpath . $filename;  
+        }
+
+        $imagenotes->title = $request->input('title');
+        $imagenotes->remind = $request->input('remind');
         $imagenotes->save();
         return redirect()->route("imagenote.index")->with("success", "¡Agregado con exito!");
         

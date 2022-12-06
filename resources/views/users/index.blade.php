@@ -42,6 +42,8 @@
                                             <th>Apellido</th>
                                             <th>Correo</th>
                                             <th>Contraseña</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -51,6 +53,8 @@
                                             <th>Apellido</th>
                                             <th>Correo</th>
                                             <th>Contraseña</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </tfoot>
                                     <tbody>

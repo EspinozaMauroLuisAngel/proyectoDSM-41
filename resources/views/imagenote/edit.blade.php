@@ -25,8 +25,9 @@
                 <label for="validationServer01" class="form-label">Titulo:</label>
                 <input class="form-control" id="validationServer01" type="text" name="title" required value="{{$imagenotes->title}}">
                 
-                <label for="validationServer03" class="form-label">Imagen:</label>
-                <input class="form-control" id="validationServer03" type="file" name="image" required value="{{$imagenotes->image}}">
+                <label>Imagen:</label><br>
+                <img src="{{$imagenotes->image}}" width="100" height="100">
+                <input class="form-control" type="file" name="image" required value="{{$imagenotes->image}}">
 
                 <label for="validationServer04" class="form-label">Recordarme:</label>
                 <input class="form-control" id="validationServer04" type="datetime-local" name="remind" required value="{{$imagenotes->remind}}">

@@ -19,7 +19,7 @@
         <div class="card shadow mb-4">
             
             <div class="card-body">
-            <form action="<?php echo e(route('note.store')); ?>" method="POST">
+            <form action="<?php echo e(route('note.store')); ?>" enctype="multipart/form-data" method="POST">
                 <?php echo csrf_field(); ?>
 
                 <label for="validationServer01" class="form-label">Titulo:</label>

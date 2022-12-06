@@ -63,6 +63,9 @@
                                             <th>Titulo</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
+
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -71,6 +74,8 @@
                                             <th>Titulo</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </tfoot>
                                     <tbody> 
@@ -79,7 +84,7 @@
                                                 <td><?php echo e($imagenote->id); ?></td>
                                                 <td><?php echo e($imagenote->title); ?></td>
                                                 <td><img src="<?php echo e($imagenote->image); ?>" alt="" width="100" height="100"></td>                                                
-                                                <td><?php echo e($imagenote->remind); ?></td>                                                
+                                                <td><?php echo e($imagenote->remind); ?></td>    
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

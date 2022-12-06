@@ -62,6 +62,9 @@
                                             <th>Titulo</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
+
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -70,6 +73,8 @@
                                             <th>Titulo</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </tfoot>
                                     <tbody> 
@@ -78,7 +83,7 @@
                                                 <td>{{$imagenote->id}}</td>
                                                 <td>{{$imagenote->title}}</td>
                                                 <td><img src="{{$imagenote->image}}" alt="" width="100" height="100"></td>                                                
-                                                <td>{{$imagenote->remind}}</td>                                                
+                                                <td>{{$imagenote->remind}}</td>    
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

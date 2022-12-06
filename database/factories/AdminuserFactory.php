@@ -25,6 +25,7 @@ class AdminuserFactory extends Factory
             'password' => $this->faker->word(),
 
             //'user_id' => user::all()->random()->id,
+
         ];
     }
 }

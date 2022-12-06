@@ -29,7 +29,8 @@
                 <label for="validationServer02" class="form-label">Describcion:</label>
                 <input style="height: 100px;" class="form-control" id="validationServer02" type="text" name="description" required value="{{$notes->description}}">
     
-                <label for="validationServer03" class="form-label">Imagen:</label>
+                <label for="validationServer03" class="form-label">Imagen:</label><br>
+                <img src="{{$notes->image}}" width="100" height="100">
                 <input class="form-control" id="validationServer03" type="file" name="image" required value="{{$notes->image}}">
 
                 <label for="validationServer04" class="form-label">Recordarme:</label>

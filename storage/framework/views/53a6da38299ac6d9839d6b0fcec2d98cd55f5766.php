@@ -64,6 +64,8 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -73,6 +75,8 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </tfoot>
                                     <tbody>   

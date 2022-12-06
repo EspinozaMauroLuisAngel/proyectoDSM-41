@@ -64,6 +64,8 @@
                                             <th>Describcion</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -73,6 +75,8 @@
                                             <th>Describcion</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Botones</th>
+
                                         </tr>
                                     </tfoot>
                                     <tbody>    
