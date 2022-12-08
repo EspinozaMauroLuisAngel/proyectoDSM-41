@@ -16,6 +16,6 @@ class listnote extends Model
     use SoftDeletes;   
     public function user() {
 
-        return $this->hasOne(user::class);
+        return $this->hasOne(user::class );
         }
 }

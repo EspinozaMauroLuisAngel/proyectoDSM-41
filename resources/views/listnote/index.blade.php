@@ -63,6 +63,7 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Usuario</th>
                                             <th>Botones</th>
 
                                         </tr>
@@ -74,6 +75,7 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Usuario</th>    
                                             <th>Botones</th>
 
                                         </tr>
@@ -85,8 +87,9 @@
                                                 <td>{{$listnote->title}}</td>
                                                 <td>{{$listnote->listdescription}}</td>
                                                 <td><img src="{{$listnote->image}}" alt="" width="100" height="100"> </td>
-                                                <td>{{$listnote->remind}}</td>                                                
-                                                
+                                                <td>{{$listnote->remind}}</td> 
+                                                {{--<td>{{$listnote->user->name}}</td>--}}                                                
+                                               
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

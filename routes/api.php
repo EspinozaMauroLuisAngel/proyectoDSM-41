@@ -3,12 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\adminuserController;
-use App\Http\Controllers\userController;
-use App\Http\Controllers\noteController;
-use App\Http\Controllers\listnoteController;
-use App\Http\Controllers\imagenoteController;
-use App\Http\Controllers\ApiUserController;
+use App\Http\Controllers\userApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,8 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::Apiresource('adminusers',adminuserController::class);
-Route::Apiresource('user',ApiUserController::class);
-Route::Apiresource('note',noteController::class);
-Route::Apiresource('listnote',listnoteController::class);
-Route::Apiresource('imagenote',imagenoteController::class);
+Route::Apiresource('user',userApiController::class);

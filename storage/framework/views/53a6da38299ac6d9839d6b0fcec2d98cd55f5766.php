@@ -64,6 +64,7 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Usuario</th>
                                             <th>Botones</th>
 
                                         </tr>
@@ -75,6 +76,7 @@
                                             <th>Descripción de la Lista</th>
                                             <th>Imagen</th>
                                             <th>Recordarme</th>
+                                            <th>Usuario</th>    
                                             <th>Botones</th>
 
                                         </tr>
@@ -86,8 +88,9 @@
                                                 <td><?php echo e($listnote->title); ?></td>
                                                 <td><?php echo e($listnote->listdescription); ?></td>
                                                 <td><img src="<?php echo e($listnote->image); ?>" alt="" width="100" height="100"> </td>
-                                                <td><?php echo e($listnote->remind); ?></td>                                                
-                                                
+                                                <td><?php echo e($listnote->remind); ?></td> 
+                                                                                                
+                                               
                                                 <td>        
                                                 <div class="row col-12">
                                                     <div class="col-4">

@@ -20,12 +20,15 @@ return new class extends Migration
             $table->string('email');    
             $table->string('password');
             
+            //$table->foreignId('note_id')->nullable()->constrained()->onDelete('set null');
             $table->unsignedInteger('note_id')->nullable();              
             $table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
 
+            //$table->foreignId('listnote_id')->nullable()->constrained()->onDelete('set null');
             $table->unsignedInteger('listnote_id')->nullable();              
             $table->foreign('listnote_id')->references('id')->on('listnotes')->onDelete('cascade');
 
+            //$table->foreignId('imagenote_id')->nullable()->constrained()->onDelete('set null');
             $table->unsignedInteger('imagenote_id')->nullable();              
             $table->foreign('imagenote_id')->references('id')->on('imagenotes')->onDelete('cascade');
 

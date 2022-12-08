@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\user;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,8 +25,8 @@ class AdminuserFactory extends Factory
             'email' => $this->faker->email(),
             'password' => $this->faker->word(),
 
-            //'user_id' => user::all()->random()->id,
-
+            'user_id' => user::inRandomOrder()->first(),
+    
         ];
     }
 }
