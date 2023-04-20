@@ -20,6 +20,7 @@ class listnoteController extends Controller
 
 
     public function store(Request $request){
+        
         $listnote = new listnote;
         if($request->hasFile('image')){
 
@@ -46,7 +47,9 @@ class listnoteController extends Controller
 
     public function edit($id){
         $listnote = listnote::findOrFail($id);
-        return view('listnote.edit', compact('listnote'));     }
+        return view('listnote.edit', compact('listnote'));     
+        
+    }
 
 
     public function update(Request $request, $id){

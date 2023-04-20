@@ -29,13 +29,9 @@ class UserFactory extends Factory
             'note_id' => note::inRandomOrder()->first(),
             'listnote_id' => listnote::inRandomOrder()->first(),
             'imagenote_id' => imagenote::inRandomOrder()->first(),
-            //'note_id' => note::all()->random()->id,
-            //'listnote_id' => listnote::all()->random()->id,
-            //'imagenote_id' => imagenote::all()->random()->id,
+       
         
-
-            
-            
+ 
         ];
     }
 }

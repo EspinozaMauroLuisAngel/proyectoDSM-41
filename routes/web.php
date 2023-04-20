@@ -23,6 +23,7 @@ Route::resource('user',userController::class);
 Route::resource('note',noteController::class);
 Route::resource('listnote',listnoteController::class);
 Route::resource('imagenote',imagenoteController::class);
+
 //Usuarios Administradores
 Route::post('/store', [adminuserController::class, 'store'])->name('adminuser.store');
 Route::delete('/destroy/{id}', [adminuserController::class, 'destroy'])->name('adminusers.destroy');

@@ -2,6 +2,7 @@
 @include('layouts.menu')
 @section('header')
 @endsection
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
@@ -77,7 +78,7 @@
                                                         <form action="user/{{$user->id}}" method="POST">
                                                             {!! csrf_field() !!}
                                                             @method("delete")
-                                                            <button class="btn btn-danger m-3" type="submit"><i
+                                                            <button  class="btn btn-danger m-3" type="submit"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                         </form>
                                                     </div>  
@@ -95,6 +96,7 @@
         </div>
     </div>
 </div>
+
 </div>  
 <!-- End of Main Content -->
 @include('layouts.footer')

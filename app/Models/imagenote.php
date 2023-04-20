@@ -15,5 +15,5 @@ class imagenote extends Model
 
     public function user() {
         return $this->hasOne(user::class);
-        }
+    }
 }

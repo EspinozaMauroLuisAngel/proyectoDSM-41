@@ -15,6 +15,4 @@
 @section('footer')
 
 @endsection
-
-    
         

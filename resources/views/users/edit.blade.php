@@ -33,7 +33,7 @@
                     <label for="validationServer01" class="form-label">Apellido:</label>
                     <input class="form-control" id="validationServer01" type="text" name="lastname" required value="{{$users->lastname}}">
     
-                    <label for="validationServer03" class="form-label">Correo:</label>
+                    <label  for="validationServer03" class="form-label">Correo:</label>
                     <input class="form-control" id="validationServer03" type="email" name="email" required value="{{$users->email}}">
     
                     <label for="validationServer04" class="form-label">Contraseña:</label>

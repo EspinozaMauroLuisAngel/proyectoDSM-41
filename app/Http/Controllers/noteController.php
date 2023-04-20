@@ -23,7 +23,7 @@ class noteController extends Controller
 
         if($request->hasFile('image')){
             $file = $request->file('image');
-            $destinationpath = 'public/imagenes';
+            $destinationpath = 'storage/imagenes';
             $filename = time(). '-' . $file->getClientOriginalName();
             $uploadSucces = $request->file('image')->move($destinationpath, $filename);
             $note->image = $destinationpath . $filename;  
@@ -54,7 +54,15 @@ class noteController extends Controller
         $notes = note::findOrFail($id);
         $notes->title = $request->input('title');
         $notes->description = $request->input('description');
-        $notes->image = $request->input('image');
+        //$notes->image = $request->input('image');
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $destinationpath = 'public/imagenes';
+            $filename = time(). '-' . $file->getClientOriginalName();
+            $uploadSucces = $request->file('image')->move($destinationpath, $filename);
+            $notes->image = $destinationpath . $filename;  
+        }
+
         $notes->remind = $request->input('remind');
         $notes->save();
 
